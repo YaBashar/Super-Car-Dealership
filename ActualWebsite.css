@@ -1,0 +1,749 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+ }
+
+ 
+
+/*### Hero Section Begins ###*/
+/*### Style the navigation bar section ###*/
+header {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  display: inline-block;
+  height: 100vh;
+  color: white;
+}
+
+header .navigation  {
+    margin: 0;
+    padding: 2vh;
+    top: 0px;
+    width: 100%;
+}
+header .navigation {
+   list-style-type: none; /*removes bullet points from list */
+   float: right;
+}
+header .navigation li{
+  float: left;  
+}
+header .navigation li a {
+  display: block;
+  margin-left: 4vw;
+  text-decoration: none;
+  color: black;
+  font-size: 3vh;
+  padding: 14px 16px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+  border-right: 2px solid black;
+}
+header .navigation li a:hover {
+    border-bottom: 1px solid;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background:darkgrey   
+}
+
+/*### Style heading paragraph and button ###*/
+.banner {
+    width: 100%;
+    min-height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/11207.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner .content{
+    max-width: 75vw;
+    text-align: center;
+    margin-bottom: 40vh; 
+  }
+  .banner .content h1 {
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: 12vh;
+    font-weight: bold;
+    color: white;
+    text-shadow: blue 0px 0px 3px;
+  }
+  .banner .content p {
+    font-size: 5vh;
+    font-weight: bold;
+    color: white;
+    line-height: 4vh;
+    margin-top: 4vh;
+    text-shadow: blue 0px 0px 3px;
+  }
+  .banner .content .btn {
+    font-size: 2.5vh;
+    color: white;
+    display: inline-block;
+    padding: 1vh 2vh;
+    background-color: blue;
+    text-decoration: none;
+    margin-top: 2vh;
+    letter-spacing: 1px;
+  }
+  .banner .content .btn:hover {
+    font-size: 5vh;
+    color: white;
+    display: inline-block;
+    padding: 1.5vh 2vh;
+    background-color: darkblue;
+    text-decoration: none;
+    margin-top: 2vh;
+    letter-spacing: 2.5px;
+    transition: 0.7s;
+  }
+/*### Hero Section Ends ###*/
+
+/*### Meet the Car Section Begins ###*/
+/*### Style Heading ###*/
+body .textbeforepics {
+  height: 10vh;
+  background-color: black;
+}
+
+body .textbeforepics h1 {
+  position: relative;
+  color: white;
+  left: 10%;
+  top: 15%;
+}
+
+/*### Style Images ###*/
+body .pictures {
+  background-color: black;
+}
+body .pictures .ferrari {
+  height: 60vh;
+  width: 54vw;
+}
+body .pictures .lambo {
+  height: 60vh;
+  width: auto;
+}
+body .pictures .buggati {
+  height: 60vh;
+  width: auto;
+}
+body .pictures .jesko {
+  height: 60vh;
+  width: 49vw;
+}
+/*### Meet the Car Section Ends ###*/
+
+
+/*### Gallery Section Begins ###*/
+
+/*### Style The Image Slideshow For Car 1 ###*/
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+body .Gallery1 {
+  height: 85vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(99, 74, 4);
+}
+
+/*### Style Heading and Descriptions ###*/
+body .Gallery1 h1 {
+  color: white;
+  text-decoration: underline;
+  position: relative;
+  font-size: 20px;
+  top: 2%;
+  left: 4%;
+}
+
+body .Gallery1 h2 {
+  color: white;
+  position: relative;
+  font-size: 20px;
+  top: 10%;
+  text-shadow: blue 0px 0px 3px;
+}
+
+body .Gallery1 p1 {
+  color: white;
+  position: relative;
+  left: 19%;
+  max-width: 50%;
+  font-size: 30px;
+  top: 15%;
+}
+
+
+/*### Style The Image Slider ###*/
+.slider {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  top: 18%;
+  right: 66%;
+}
+.images {
+  display: flex;
+  width: 100%;
+  top: 30%;
+}
+.images img {
+  height: 400px;
+  width: 100%;
+  border-radius: 2px;
+  border-color: black;
+  border-style: solid;
+  transition: all 0.15s ease;
+}
+.images input {
+  display: none;
+}
+.dots {
+  display: flex;
+  justify-content: left;
+  margin: 5px;
+}
+.dots label { 
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid white 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .s1 {
+  margin-left: 0;
+}
+#img2:checked ~ .s2 {
+  margin-left: -100%;
+}
+#img3:checked ~ .s3 {
+  margin-left: -200%;
+}
+#img4:checked ~ .s4 {
+  margin-left: -300%;
+}
+#img5:checked ~ .s5 {
+  margin-left: -400%;
+}
+#img6:checked ~ .s6 {
+  margin-left: -500%;
+}
+
+
+/*### Style The Image Slideshow For Car 2 ###*/
+/*### Style Heading and Descriptions ###*/
+body .Gallery2 {
+  height: 80vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: rgb(219, 100, 100);
+}
+body .Gallery2 h1 {
+  color: white;
+  position: relative;
+  top: 5%;
+  left: 3%;
+  text-shadow: blue 0px 0px 3px;
+ 
+}
+body .Gallery2 p1 {
+  color: white;
+  position: relative;
+  left: 25%;
+  max-width: 50%;
+  font-size: 30px;
+  top: 15%;
+}
+
+/*### Style Image Slider ###*/
+.slider2 { 
+  position: relative;
+  width: 35%;
+  overflow: hidden;
+  top: 15%;
+  right: 62%;
+}
+.images2 {
+  display: flex;
+  width: 100%;
+  top: 30%;
+}
+.images2 img {
+  height: 400px;
+  width: 100%;
+  border-radius: 2px;
+  border-color: black;
+  border-style: solid;
+  transition: all 0.15s ease;
+}
+.images2 input {
+  display: none;
+}
+.dots2 {
+  display: flex;
+  justify-content: left;
+  margin: 5px;
+}
+.dots2 label { 
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid white 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots2 label:hover {
+  background: #fff;
+}
+
+#img12:checked ~ .s12 {
+  margin-left: 0;
+}
+#img22:checked ~ .s22 {
+  margin-left: -100%;
+}
+#img32:checked ~ .s32 {
+  margin-left: -200%;
+}
+#img42:checked ~ .s42 {
+  margin-left: -300%;
+}
+#img52:checked ~ .s52 {
+  margin-left: -400%;
+}
+#img62:checked ~ .s62 {
+  margin-left: -500%;
+}
+
+/*### Style The Image Slideshow For Car 3 ###*/
+/*### Style Heading and Descriptions ###*/
+body .Gallery3 {
+  height: 80vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: rgba(60, 76, 128, 0.932);
+}
+body .Gallery3 h1 {
+  color: white;
+  position: relative;
+  top: 5%;
+  left: 4%;
+  text-shadow: rgb(89, 89, 184) 0px 0px 3px;
+}
+body .Gallery3 p1 {
+  color: white;
+  position: relative;
+  left: 20%;
+  max-width: 50%;
+  font-size: 30px;
+  top: 10%;
+}
+
+/*### Style Image Slider ###*/
+.slider3 { 
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  top: 15%;
+  right: 65%;
+ 
+}
+.images3 {
+  display: flex;
+  width: 100%;
+  top: 30%;
+}
+.images3 img {
+  height: 400px;
+  width: 100%;
+  border-radius: 2px;
+  border-color: black;
+  border-style: solid;
+  transition: all 0.15s ease;
+}
+.images3 input {
+  display: none;
+}
+.dots3 {
+  display: flex;
+  justify-content: left;
+  margin: 5px;
+}
+.dots3 label { 
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid white 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots3 label:hover {
+  background: #fff;
+}
+
+#img13:checked ~ .s13 {
+  margin-left: 0;
+}
+#img23:checked ~ .s23 {
+  margin-left: -100%;
+}
+#img33:checked ~ .s33 {
+  margin-left: -200%;
+}
+#img43:checked ~ .s43 {
+  margin-left: -300%;
+}
+#img53:checked ~ .s53 {
+  margin-left: -400%;
+}
+#img63:checked ~ .s63 {
+  margin-left: -500%;
+}
+
+
+/*### Style The Image Slideshow For Car 4 ###*/
+/*### Style Heading and Descriptions ###*/
+body .Gallery4 {
+  height: 80vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: rgba(192, 158, 158, 0.952);
+}
+body .Gallery4 h1 {
+  color: white;
+  position: relative;
+  top: 5%;
+  left: 3%;
+  text-shadow: blue 0px 0px 3px;
+}
+body .Gallery4 p1 {
+  color: white;
+  position: relative;
+  left: 22%;
+  max-width: 50%;
+  font-size: 30px;
+  top: 20%;
+}
+
+/*### Style Image Slider ###*/
+.slider4 { 
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  top: 15%;
+  right: 63%;
+}
+.images4 {
+  display: flex;
+  width: 100%;
+  top: 30%;
+}
+.images4 img {
+  height: 400px;
+  width: 100%;
+  border-radius: 2px;
+  border-color: black;
+  border-style: solid;
+  transition: all 0.15s ease;
+}
+.images4 input {
+  display: none;
+}
+.dots4 {
+  display: flex;
+  justify-content: left;
+  margin: 5px;
+}
+.dots4 label { 
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid white 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots4 label:hover {
+  background: #fff;
+}
+
+#img14:checked ~ .s14 {
+  margin-left: 0;
+}
+#img24:checked ~ .s24 {
+  margin-left: -100%;
+}
+#img34:checked ~ .s34 {
+  margin-left: -200%;
+}
+#img44:checked ~ .s44 {
+  margin-left: -300%;
+}
+#img54:checked ~ .s54 {
+  margin-left: -400%;
+}
+#img64:checked ~ .s64 {
+  margin-left: -500%;
+}
+/*### Gallery Section Ends ###*/
+
+/*### Buy Now Section Begins ###*/
+/*### Style Heading and Section Size ###*/
+body .cards {
+  height: 100vh;
+}
+body .cards .Buy {
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+
+/*### Image Cards - Card 1 Begins ###*/
+.card-one {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 9%;
+  right: 35%;
+  background-image: url("../img/Bugatti_Chiron.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 20vw;
+  height: 65vh;
+  font-size: 18px;
+  border-style: ridge;
+ 
+}
+
+/*### Style Descriptions and Button ###*/
+.card-one h1 {
+  position: relative;
+  top: 40%;
+}
+.card-one .price {
+  position: relative;
+  top: 41%;
+  color: grey;
+  font-size: 22px;
+}
+.card-one p {
+  position: relative;
+  top: 42%;
+  font-size: 15px;
+}
+.card-one button {
+  position:relative;
+  top: 5vh;
+  border: none;
+  outline: black;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 101%;
+  font-size: 18px;
+}
+.card-one button:hover {
+  opacity: 0.7;
+}
+
+/*### Image Cards - Card 1 Ends ###*/
+
+/*### Image Cards - Card 2 Begins ###*/
+.card-two {
+  height: 10vh;
+  width: 10vw;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 56%;
+  right: 12%;
+  background-image: url("../img/Koennigsegg_Jesko.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 20vw;
+  height: 65vh;
+  font-size: 18px;
+  border-style: ridge;
+ 
+}
+
+/*### Style Descriptions and Button ###*/
+.card-two h1 {
+  position: relative;
+  top: 45%;
+}
+.card-two .price {
+  position: relative;
+  top: 46%;
+  color: grey;
+  font-size: 22px;
+}
+.card-two p {
+  position: relative;
+  top: 50%;
+  font-size: 15px;
+}
+.card-two button {
+  position:relative;
+  top: 5vh;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 101%;
+  font-size: 18px;
+}
+
+.card-two button:hover {
+  opacity: 0.7;
+}
+/*### Image Cards - Card 2 Ends ###*/
+
+/*### Image Cards - Card 3 Begins ###*/
+.card-three {
+  height: 10vh;
+  width: 10vw;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 120%;
+  right: -12%;
+  background-image: url("../img/Laferrari_Aperta.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 20vw;
+  height: 65vh;
+  font-size: 18px;
+  border-style: ridge;
+ 
+}
+
+/*### Style Descriptions and Button ###*/
+.card-three h1 {
+  position: relative;
+  top: 40%;
+}
+.card-three .price {
+  position: relative;
+  top: 42%;
+  color: grey;
+  font-size: 22px;
+}
+.card-three p {
+  position: relative;
+  top: 45%;
+  font-size: 15px;
+}
+
+.card-three button {
+  position:relative;
+  top: 5vh;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 101%;
+  font-size: 18px;
+}
+.card-three button:hover {
+  opacity: 0.7;
+}
+/*### Image Cards - Card 3 Ends ###*/
+
+/*### Image Cards - Card 4 Begins ###*/
+.card-four {
+  height: 10vh;
+  width: 10vw;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 185%;
+  left: 35%;
+  background-image: url("../img/Lambhorgini_Avantador.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 20vw;
+  height: 65vh;
+  font-size: 18px;
+  border-style: ridge;
+}
+
+/*### Style Descriptions and Button ###*/
+.card-four h1 {
+  position: relative;
+  top: 40%;
+}
+.card-four .price {
+  position: relative;
+  top: 41%;
+  color: grey;
+  font-size: 22px;
+}
+.card-four p {
+  position: relative;
+  top: 42%;
+  font-size: 15px;
+}
+
+.card-four button {
+  position:relative;
+  top: 2vh;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 101%;
+  font-size: 18px;
+}
+.card-four button:hover {
+  opacity: 0.7;
+}
+
+/*### Image Cards - Card 4 Ends ###*/
+/*### Buy Now Section Ends ###*/
